@@ -1,11 +1,12 @@
 import React from 'react';
+import './style.css';
 
 const Images = (props) => {
 
   const { src } = props;
   return(
-    <div>
-      <img src={src} />
+    <div className='image'>
+      <img src={src} alt='alt' />
     </div>
   );
 }
