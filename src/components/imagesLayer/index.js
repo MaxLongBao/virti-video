@@ -11,9 +11,13 @@ const ImagesLayer = (props) => {
 
   return(
     <div className='wrapper'>
-      <Image src={img1} />
-      <Image src={img2} />
-      <Image src={img3} />
+      <div className='upper'>
+        <Image src={img1} />
+        <Image src={img2} />
+      </div>
+      <div className='central'>
+        <Image src={img3} />
+      </div>
     </div>
   );
 };
