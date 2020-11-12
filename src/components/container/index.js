@@ -3,23 +3,31 @@ import Video from '../video';
 import ImagesLayer from '../imagesLayer';
 import './style.css';
 
-// let showed = false;
-
+let isRickRoll = false;
 const Container = () => {
 
-  const [time, setTime] = useState();
+  const [timeStamp, setTimeStamp] = useState();
 
-  const prefix = process.env.PUBLIC_URL;
-  const video = `${prefix}Big_Buck_Bunny_1080_10s_5MB.mp4`;
+  const video = '/Big_Buck_Bunny_1080_10s_5MB.mp4';
+  const rickRollVideo = '/videoplayback.mp4';
   
   const getTime = (currentTime) => {
-    setTime(currentTime);
+    setTimeStamp(currentTime);
+  };
+
+  const rickRoll = () => {
+    isRickRoll = true;
   };
 
   return(
     <div className='container'>
-      <Video src={video} getTime={getTime} />
-      <ImagesLayer prefix={prefix} time={time} />
+      {isRickRoll ? 
+      <Video src={rickRollVideo} getTime={getTime} auto={true} />
+      : null}
+      {isRickRoll ? 
+      null
+      : <Video src={video} getTime={getTime} auto={false} />}
+      <ImagesLayer timeStamp={timeStamp} rickRoll={rickRoll} />
     </div>
   );
 };
