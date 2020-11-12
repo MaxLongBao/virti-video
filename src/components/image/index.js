@@ -3,9 +3,9 @@ import './style.css';
 
 const Images = (props) => {
 
-  const { src } = props;
+  const { src, show } = props;
   return(
-    <div className='image'>
+    <div className={show} >
       <img src={src} alt='alt' />
     </div>
   );
