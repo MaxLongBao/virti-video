@@ -1,0 +1,40 @@
+.upLeft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.upRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.downLeft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.downRight {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.button {
+  width: 80px;
+  height: 50px;
+  border-radius: 14px;
+  border: none;
+  box-shadow: 1px 1px black;
+  background-color: #925E78;
+  color: #F2EDEB;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}

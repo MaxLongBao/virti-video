@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import Button from '../button';
 import './style.css';
 
 const Video = (props) => {
@@ -20,6 +21,9 @@ const Video = (props) => {
   return(
     <div>
       {video}
+      {auto ? 
+      <Button />
+      : null}
     </div>
   )
 };
