@@ -3,11 +3,11 @@ import Video from '../video';
 import ImagesLayer from '../imagesLayer';
 import './style.css';
 
-let isRickRoll = false;
 const Container = () => {
-
+  
   const [timeStamp, setTimeStamp] = useState();
-
+  const [isRickRoll, setIsRickRoll] = useState(false);
+  
   const video = '/Big_Buck_Bunny_1080_10s_5MB.mp4';
   const rickRollVideo = '/videoplayback.mp4';
   
@@ -16,7 +16,7 @@ const Container = () => {
   };
 
   const rickRoll = () => {
-    isRickRoll = true;
+    setIsRickRoll(true);
   };
 
   return(

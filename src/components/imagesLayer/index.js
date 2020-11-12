@@ -73,7 +73,7 @@ const ImagesLayer = (props) => {
     <div className='wrapper'>
       <div className='upper'>
         <Image src={imgLeft} alt={'banana'} show={showLeft} />
-        <Image src={imgRight} alt={'controller'} show={showRight} />
+        <Image src={imgRight} alt={'joypad'} show={showRight} />
       </div>
       <div className='central'>
         <Image src={imgCenter} alt={'flame'} show={showCentral} />

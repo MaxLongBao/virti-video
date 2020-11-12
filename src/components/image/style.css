@@ -4,7 +4,6 @@ img {
 
 .hidden {
   visibility: hidden;
-  z-index: 1;
 }
 
 .show {
