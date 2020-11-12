@@ -65,7 +65,7 @@ const ImagesLayer = (props) => {
     }
   };
 
-  showLeft = setShowLeft(3.5, 8, 1);
+  showLeft = setShowLeft(3.5, 8.5, 1);
   showRight = setShowRight(6, 8, 2);
   showCentral = setShowCentral(7, 8.5, 3);
   
