@@ -2,11 +2,6 @@ import React from 'react';
 import Image from '../image';
 import './style.css';
 
-// let showss = false;
-// let counterLeft = 0;
-// let counterRight = 0;
-// let counterCentral = 0;
-
 const ImagesLayer = (props) => {
 
   const { prefix, time } = props;
@@ -17,17 +12,9 @@ const ImagesLayer = (props) => {
   
   const show = (startTime, endTime) => {
     if (time >= startTime && time <= endTime) {
-      // if (showss === false) {
-      //   showss = true;
-      //   counterLeft++;
-      //   console.log(showss)
-      //   console.log(counterLeft)
         return 'show';
       };
-    // } else {
-    //   showss = false;
       return 'hidden';
-    // };
   };
 
   let showLeft = 'hidden';
